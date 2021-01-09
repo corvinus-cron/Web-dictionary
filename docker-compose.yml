@@ -1,0 +1,25 @@
+dictionary:
+  build: ./app
+  container_name: "dictionary"
+  ports:
+    - "80:80"
+    - "23:22"
+    - "442:442"
+  volumes:
+    - "./app:/var/www/html"
+  links:
+    - dictionaryserver
+    - mariadb
+
+dictionaryserver:
+  image: "brendanburns/dictionary-server"
+
+mariadb:
+  container_name: "mariadb"
+  build: ./mariadb
+  restart: always
+  environment:
+    - MYSQL_ROOT_PASSWORD=docker
+    - MYSQL_DATABASE=dictionary
+    - MYSQL_USER=newuser
+    - MYSQL_PASSWORD=userpass
