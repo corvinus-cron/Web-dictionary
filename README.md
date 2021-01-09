@@ -16,3 +16,5 @@ chmod +x start.sh
 ./start.sh
 ```
 Для доступа к интерфейсу - [словарь](http://localhost/)
+
+Версия данного приложения, с запросом через URL. [Глоссарий](https://github.com/corvinus-cron/glossary)
