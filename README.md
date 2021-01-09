@@ -1,5 +1,5 @@
 # Web-dictionary
-- Развертывание и запуск словаря:
+Развертывание и запуск словаря:
 ```shell script
 sudo git clone https://github.com/Lazarenko-Alexandr/Web-dictionary.git
 
