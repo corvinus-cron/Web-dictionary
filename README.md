@@ -1,7 +1,7 @@
 # Web-dictionary
 Развертывание и запуск словаря:
 ```shell script
-sudo git clone https://github.com/Lazarenko-Alexandr/Web-dictionary.git
+sudo git clone https://github.com/corvinus-cron/Web-dictionary.git
 
 cd Web-dictionary
 
